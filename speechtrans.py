@@ -4,7 +4,7 @@ from translate import Translator
 test = shanu.Recognizer()
 translator= Translator(to_lang="te")
 with shanu.Microphone() as source:
-    print("Now Start Speacking")
+    print("Now Start Speaking")
     audio = test.listen(source)
 try:
     print("You said " + test.recognize_google(audio))   
